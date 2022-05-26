@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { GradeSistema, Rodape } from "../../components/content/styled";
 import { alterarEditora, findEditoraById } from "../../Service/EditoraService";
 import { INICIAR_EDITORA } from "./Editora";
+import Layout from "../../components/layout/Layout";
 
 const AlterarEditora = _ => {
     
@@ -35,6 +36,7 @@ const AlterarEditora = _ => {
 
     return (
         <Fragment>
+            <Layout>
             <div className="container">
                 <PageHeaders
                     tituloPagina="Alterar Registro"
@@ -84,6 +86,7 @@ const AlterarEditora = _ => {
                 </div>
                 </GradeSistema>
             </div>
+            </Layout>
         </Fragment>
     )
 }

@@ -27,7 +27,6 @@ function App() {
   return (
       <Fragment>
         <BrowserRouter>
-          <LoginPagina>
             <Routes>
                 <Route path="/dashboard" element={<Dashboard/>}/>
                 <Route path="/editora/listar" element={<ListarEditora/>}/>
@@ -37,8 +36,7 @@ function App() {
                 <Route path="/login" element={<LoginPagina/>}/>
                 <Route path="/usuario/inserir" element={<IncluirUsuario/>}/>
             </Routes>
-          </LoginPagina>
-      </BrowserRouter>
+         </BrowserRouter>
     </Fragment>
   );    
 }

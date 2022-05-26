@@ -1,5 +1,4 @@
 export const INIT_USUARIO = {
-    
     id:'',
     name:'',
     email:'',

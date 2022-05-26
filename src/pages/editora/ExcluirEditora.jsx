@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { GradeSistema, Rodape } from "../../components/content/styled";
 import { excluirEditora, findEditoraById } from "../../Service/EditoraService";
 import { INICIAR_EDITORA } from "./Editora";
+import Layout from "../../components/layout/Layout";
 
 const ExcluirEditora = _ => {
     
@@ -35,6 +36,7 @@ const ExcluirEditora = _ => {
 
     return (
         <Fragment>
+            <Layout>
             <div className="container">
                 <PageHeaders
                     tituloPagina="Deletar Registro"
@@ -83,6 +85,7 @@ const ExcluirEditora = _ => {
                 </div>
                 </GradeSistema>
             </div>
+            </Layout>
         </Fragment>
     )
 }

@@ -9,10 +9,10 @@ const LoginPagina = _ =>{
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     
+    
     return(
         <Tela>
             <ContainerLogin>
-                
                     <Imagem>
                         <div className="logo">
                             <img src={logo} width="500px" height="500px"></img>
@@ -29,6 +29,7 @@ const LoginPagina = _ =>{
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
+                            
                                 />
                                 <span className="focus-input" data-placeholder="Email"></span>
                                 </div>
@@ -44,7 +45,7 @@ const LoginPagina = _ =>{
                                 </div>
 
                                 <div className="container-login-form-btn">
-                                <button className="login-form-btn">Login</button>
+                                    <button type="submit" className="login-form-btn" >Login</button>
                                 </div>
                                 <br/>
                                 <div className="text-center">

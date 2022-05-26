@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { GradeSistema, Rodape } from "../../components/content/styled";
 import PageHeaders from "../../components/header/PageHeaders";
+import Layout from "../../components/layout/Layout";
 import { inserirEditora } from "../../Service/EditoraService";
 import { INICIAR_EDITORA } from "./Editora";
 
@@ -23,6 +24,7 @@ const IncluirEditora = _ => {
     }
     return (
         <Fragment>
+            <Layout>
             <div className="container">
                 <PageHeaders
                     tituloPagina="Incluir Registro"
@@ -72,6 +74,7 @@ const IncluirEditora = _ => {
                 </div>
                 </GradeSistema>
             </div>
+            </Layout>
         </Fragment>
     )
 }

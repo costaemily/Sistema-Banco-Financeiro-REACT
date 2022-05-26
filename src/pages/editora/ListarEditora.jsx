@@ -6,6 +6,7 @@ import { findAllEditoras, findEditoraByName } from '../../Service/EditoraService
 import Pagination from '../../components/table/Pagination';
 import SelectNumberPages from '../../components/table/SelectNumberPages';
 import SearchData from '../../components/table/SearchData';
+import Layout from '../../components/layout/Layout';
 
 const ListarEditora = () => {
 
@@ -63,6 +64,7 @@ const ListarEditora = () => {
     }
     return(
       <Fragment>
+          <Layout>
         <div className='container'>
           <PageHeaders 
              tituloPagina="Listagem de Editoras"
@@ -129,12 +131,9 @@ const ListarEditora = () => {
 
         </GradeSistema>
               
-        </div>
-        
-
-
-
-      </Fragment> 
+            </div>
+        </Layout>
+    </Fragment> 
     )
 
 }
